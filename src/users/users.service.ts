@@ -5,7 +5,7 @@ import { CreateUserDto, CreateUserInput } from './dto/create-user.input';
 import { UpdateUserInput } from './dto/update-user.input';
 import { Users } from './entities/user.entity';
 
-@Injectable()
+@Injectable() 
 export class UsersService {
    
       constructor(@InjectModel('User') private readonly userModel: Model<Users>) {}
